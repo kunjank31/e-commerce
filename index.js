@@ -18,7 +18,9 @@ const corOptions = {
     "https://admin.livetheproject.online",
   ],
 };
-
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from Server!" });
+});
 app.use(cors(corOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
