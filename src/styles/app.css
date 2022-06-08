@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  background: #fff !important;
+}
+
+.searchIcon {
+  height: auto !important;
+  font-size: 40px !important;
+  display: none !important;
+}
+
+.slider-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  transform: translate(0vw);
+  transition: transform 0.5s linear;
+}
+
+.slider .desc-wrapper {
+  /* flex-basis: 50%; */
+}
+
+.featured .items {
+  flex-basis: 33.33%;
+}
+
+.popularItems,
+.icons {
+  transition: all 0.5s ease;
+}
+
+.icons-touch {
+  font-size: 40px !important;
+  transform: translateY(0px);
+  transition: all 0.5s ease !important;
+}
+
+.icons-touch:hover {
+  transform: translateY(-10px);
+}
+
+.icons {
+  transition-delay: 0.1s;
+}
+
+.popularItems:hover .popularShawdow {
+  opacity: 1;
+}
+
+.popularItems:hover .icons {
+  opacity: 1;
+}
+
+.socialIcons {
+  font-size: 40px !important;
+}
+
+.register,
+.login,
+.forgetPassword {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.register {
+  background: url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat 100% / cover;
+}
+
+.login,
+.forgetPassword {
+  background: url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat 100% / cover;
+}
+
+.register::before,
+.login::before,
+.forgetPassword::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff8f;
+}
+.currency {
+  font-size: 35px !important;
+  font-weight: 200 !important;
+}
+
+.cartCeckout {
+  font-size: 18px !important;
+}
+
+.delete {
+  margin-left: 2rem !important;
+  font-size: 40px !important;
+  padding: 10px;
+  background: rgb(255, 20, 20);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.payment {
+  background-image: linear-gradient(rgb(18, 21, 22), rgb(9, 10, 10)) !important;
+}
+
+.payment span {
+  background-image: linear-gradient(rgb(18, 21, 22), rgb(9, 10, 10)) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+.arrowDropdown {
+  transform: rotate(0deg);
+  transition: transform 0.3s linear !important;
+}
+
+.dropdown:hover .arrowDropdown {
+  transform: rotate(180deg);
+}
+
+.dropdown:hover ul,
+.dropdown:hover .smallArrow {
+  display: block;
+}
+
+.iconsAccount {
+  font-size: 2rem !important;
+}
+
+@media (max-width: 630px) {
+  .searchIcon {
+    display: inline-block !important;
+  }
+}
