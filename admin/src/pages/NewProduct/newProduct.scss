@@ -1,0 +1,89 @@
+.newProduct {
+  width: 100%;
+  display: flex;
+  .newContainer {
+    flex: 6;
+    .top {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+    }
+
+    .addProductForm {
+      margin: 20px;
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+      .addProductItem {
+        // width: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        .box {
+          width: 100%;
+          min-height: 200px;
+          border: 3px dotted #6439ff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          border-radius: 10px;
+
+          input[type="file"] {
+            display: none;
+          }
+          label {
+            filter: drop-shadow(5px 5px 5px #00000030);
+          }
+          .imageContainer {
+            align-self: flex-start;
+            margin: 2px 10px;
+            display: flex;
+            width: 200px;
+            height: 200px;
+            img {
+              object-fit: contain;
+              margin-right: 5px;
+            }
+          }
+        }
+        label {
+          color: gray;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        input {
+          padding: 10px;
+          width: 100%;
+        }
+        select {
+          padding: 10px;
+        }
+      }
+    }
+    .addProductButton {
+      margin-top: 10px;
+      padding: 7px 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: darkblue;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .upload {
+      margin-right: 10px;
+      background-color: red;
+    }
+  }
+}

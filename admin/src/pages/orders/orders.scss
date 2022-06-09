@@ -1,0 +1,23 @@
+.orders {
+  display: flex;
+
+  .ordersContainer {
+    flex: 6;
+    .ordersTable {
+      height: 620px;
+      padding: 20px;
+      .orderTitle {
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .capt{
+      text-transform: capitalize;
+    }
+  }
+}
